@@ -83,3 +83,11 @@ footer { margin-top: 42px; padding-top: 15px; border-top: 1px solid #e6e6e6; dis
 .email-secondary { flex-direction: column; gap: 3px; }
 .email-separator { display: none; }
 }
+
+/* Smaller headings and plain-text email addresses */
+h1 { font-size: 28px; }
+h2 { font-size: 21px; }
+.chinese-name { font-size: .82em; font-weight: 500; white-space: nowrap; }
+.email-primary { color: #4b4b4b; }
+.email-secondary { color: #6b6b6b; }
+@media (max-width: 600px) { h1 { font-size: 26px; } h2 { font-size: 20px; } }
