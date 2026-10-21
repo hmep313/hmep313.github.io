@@ -5,7 +5,7 @@
 <title>Yongyi Wu | Academic Homepage</title>
 <meta name="description" content="Yongyi Wu, Research Assistant at The University of Hong Kong. Research in continual learning, diffusion models, and AI agents.">
 <link rel="canonical" href="https://hmep313.github.io/">
-<link rel="stylesheet" href="style.css?v=6">
+<link rel="stylesheet" href="style.css?v=7">
 </head>
 <body>
 <a class="skip" href="#biography">Skip to content</a>
@@ -69,4 +69,21 @@
 </section>
 <footer><span>© 2026 Yongyi Wu</span><a href="#">Back to top ↑</a></footer>
 </main>
+<script>
+(() => {
+  const panel = document.querySelector('.news-scroll');
+  const list = panel.querySelector('.news-list');
+  const update = () => {
+    const rows = [...list.children];
+    if (rows.length < 4) { panel.style.maxHeight = 'none'; return; }
+    const fourth = rows[3];
+    const top = fourth.getBoundingClientRect().top - list.getBoundingClientRect().top;
+    const padding = parseFloat(getComputedStyle(fourth).paddingBottom) || 0;
+    panel.style.maxHeight = `${Math.ceil(top + (fourth.getBoundingClientRect().height - padding) / 2)}px`;
+  };
+  new ResizeObserver(update).observe(list);
+  update();
+  document.fonts.ready.then(update);
+})();
+</script>
 </body></html>
