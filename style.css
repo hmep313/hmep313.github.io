@@ -91,3 +91,10 @@ h2 { font-size: 21px; }
 .email-primary { color: #4b4b4b; }
 .email-secondary { color: #6b6b6b; }
 @media (max-width: 600px) { h1 { font-size: 26px; } h2 { font-size: 20px; } }
+
+/* Soften the partially visible last News item; reveal fully at the bottom. */
+.news-scroll.has-more-below {
+  -webkit-mask-image: linear-gradient(to bottom, #000 0, #000 calc(100% - 32px), transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 0, #000 calc(100% - 32px), transparent 100%);
+}
+@media print { .news-scroll.has-more-below { -webkit-mask-image: none; mask-image: none; } }
