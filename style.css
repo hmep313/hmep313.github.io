@@ -43,7 +43,7 @@ footer { margin-top: 42px; padding-top: 15px; border-top: 1px solid #e6e6e6; dis
 .preferred { color: #626262; font-size: 13px; }
 .profile-links { display: flex; flex-wrap: wrap; gap: 5px 10px; margin-bottom: 0; }
 .profile-links span { color: #999; }
-.news-scroll { max-height: 180px; }
+.news-scroll { max-height: 300px; }
 .publications { margin: 0; padding: 0; }
 .paper { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 28px; align-items: center; margin-bottom: 34px; }
 .pipeline-link { display: block; margin: 0 8px 8px 0; }
