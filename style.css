@@ -10,9 +10,6 @@ h2 { font-size: 24px; line-height: 1.4; margin: 0 0 18px; border-bottom: 1px sol
 h3 { font-size: 16px; line-height: 1.55; margin: 0; }
 p { margin: 0 0 13px; }
 .affiliation { color: #626262; margin-bottom: 12px; }
-.contact { display: flex; flex-wrap: wrap; gap: 10px; }
-.contact span { color: #888; }
-nav { display: flex; flex-wrap: wrap; gap: 6px 22px; margin-top: 25px; font-size: 14px; }
 section { margin-top: 33px; }
 .interests { padding-left: 22px; margin: 0; }
 .interests li { padding-left: 2px; margin-bottom: 7px; }
@@ -25,8 +22,6 @@ section { margin-top: 33px; }
 .news-list li { display: grid; grid-template-columns: 76px 1fr; gap: 12px; padding-bottom: 13px; }
 time { color: #6a6a6a; font-size: 14px; padding-top: 2px; font-variant-numeric: tabular-nums; }
 .contribution { font-size: 14px; font-weight: normal; }
-.publications { list-style: disc; padding-left: 22px; margin: 0; }
-.publications li { padding-left: 2px; margin-bottom: 26px; }
 .authors { margin: 5px 0 0; }
 .venue { margin: 1px 0 6px; color: #3b5a85; }
 .muted { color: #6c6c6c; font-weight: normal; }
@@ -39,3 +34,39 @@ footer { margin-top: 42px; padding-top: 15px; border-top: 1px solid #e6e6e6; dis
 @media (max-width: 600px) { main { padding: 30px 22px 20px; } h1 { font-size: 30px; } h2 { font-size: 22px; } section { margin-top: 28px; } nav { gap: 5px 16px; } .section-note { float: none; display: block; margin: 3px 0 0; } .contribution { display: block; font-size: 13px; } .education-row { display: block; } .education-date { margin-top: 3px; } .news-list li { grid-template-columns: 64px 1fr; gap: 8px; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 @media print { nav, .section-note, footer a { display: none; } main { padding: 0; } .news-scroll { max-height: none; overflow: visible; } }
+
+/* Profile and illustrated publications */
+.profile-header { display: flex; align-items: center; gap: 30px; }
+.profile-info { flex: 1; min-width: 0; }
+.portrait { width: 190px; height: 220px; object-fit: cover; object-position: 70% 68%; border-radius: 3px; flex-shrink: 0; }
+.emails { font-size: 14px; line-height: 1.85; overflow-wrap: anywhere; margin: 16px 0 12px; }
+.preferred { color: #626262; font-size: 13px; }
+.profile-links { display: flex; flex-wrap: wrap; gap: 5px 10px; margin-bottom: 0; }
+.profile-links span { color: #999; }
+.news-scroll { max-height: 180px; }
+.publications { margin: 0; padding: 0; }
+.paper { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 28px; align-items: center; margin-bottom: 34px; }
+.pipeline-link { display: block; margin: 0 8px 8px 0; }
+.pipeline { display: block; width: 100%; height: auto; background: #fff; border: 1px solid #e5e7eb; padding: 5px; box-shadow: 7px 7px 0 #e0e5ec; }
+.paper-info h3 { line-height: 1.45; }
+.paper-info .authors { font-size: 15px; }
+.paper-links { margin: 0 0 7px; display: flex; gap: 12px; font-size: 14px; }
+.education-row { align-items: center; gap: 20px; }
+.school-emblem { width: 76px; height: 76px; object-fit: contain; flex-shrink: 0; }
+.education-info { flex: 1; }
+.education-info p { margin: 3px 0 0; }
+.education-date { margin: 0; }
+@media (max-width: 700px) {
+.profile-header { gap: 20px; align-items: flex-start; }
+.portrait { width: 130px; height: 165px; }
+.paper { grid-template-columns: 1fr; gap: 19px; }
+.pipeline-link { width: min(100%, 400px); }
+.education-row { display: grid; grid-template-columns: 65px 1fr; gap: 5px 15px; }
+.school-emblem { width: 65px; height: 65px; grid-row: span 2; }
+.education-date { grid-column: 2; white-space: normal; }
+}
+@media (max-width: 480px) {
+.profile-header { flex-direction: column-reverse; gap: 20px; }
+.portrait { width: 145px; height: 170px; }
+.emails { font-size: 14px; }
+}

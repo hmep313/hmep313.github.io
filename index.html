@@ -5,16 +5,20 @@
 <title>Yongyi Wu | Academic Homepage</title>
 <meta name="description" content="Yongyi Wu, Research Assistant at The University of Hong Kong. Research in continual learning, diffusion models, and AI agents.">
 <link rel="canonical" href="https://hmep313.github.io/">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
 <a class="skip" href="#biography">Skip to content</a>
 <main>
-<header>
+<header class="profile-header">
+<div class="profile-info">
 <h1>Yongyi Wu</h1>
 <p class="affiliation">Research Assistant · The University of Hong Kong</p>
-<div class="contact"><a href="mailto:yongyiwu.cn@gmail.com">Email</a><span>·</span><a href="mailto:yongyiwu@stu.xjtu.edu.cn">Academic Email</a><span>·</span><a href="https://github.com/hmep313">GitHub</a></div>
-<nav aria-label="Sections"><a href="#biography">Biography</a><a href="#research">Research Interest</a><a href="#news">News</a><a href="#publications">Publications</a><a href="#education">Education</a></nav>
+<p class="emails"><strong>Email:</strong> <a href="mailto:yongyiwu.cn@gmail.com">yongyiwu.cn@gmail.com</a> <span class="preferred">(preferred)</span>;<br>
+<a href="mailto:yongyiwu@hku.hk">yongyiwu@hku.hk</a>; <a href="mailto:yongyiwu@stu.xjtu.edu.cn">yongyiwu@stu.xjtu.edu.cn</a>.</p>
+<p class="profile-links"><a href="https://scholar.google.com/citations?user=DOS9YDwAAAAJ&amp;hl=en">Google Scholar</a><span>/</span><a href="CV.pdf">CV</a><span>/</span><a href="https://www.linkedin.com/in/yongyi-wu-862b41302/">LinkedIn</a><span>/</span><a href="https://github.com/hmep313">GitHub</a></p>
+</div>
+<img class="portrait" src="portrait.jpg" alt="Yongyi Wu" width="190" height="220">
 </header>
 <section id="biography" aria-labelledby="bio-title">
 <h2 id="bio-title">Biography</h2>
@@ -23,35 +27,43 @@
 </section>
 <section id="research" aria-labelledby="research-title">
 <h2 id="research-title">Research Interest</h2>
-<ul class="interests">
-<li><strong>Continual Learning:</strong> Class incremental learning and online continual learning, with a focus on the stability–plasticity dilemma.</li>
-<li><strong>Diffusion Models:</strong> Pixel-space diffusion for high-fidelity text rendering and fine-grained visual content.</li>
-<li><strong>AI Agents:</strong> Evidence-guided medical agents that integrate visual inspection, medical knowledge, and localization feedback.</li>
-</ul>
+<ul class="interests"><li>AI Agents</li><li>Diffusion Models</li><li>Continual Learning</li></ul>
 </section>
 <section id="news" aria-labelledby="news-title">
 <h2 id="news-title">News <span class="section-note">Scroll for earlier updates ↓</span></h2>
 <div class="news-scroll" tabindex="0" role="region" aria-label="News updates, scroll to read more">
 <ul class="news-list">
-<li><time>2026</time><span>Our paper “From Generic to Dedicated: A Novel Optimizer for Online Continual Learning” has been accepted by <strong>NeurIPS 2026</strong>!</span></li>
-<li><time datetime="2026-08">08/2026</time><span>I joined <strong>The University of Hong Kong</strong> as a full-time Research Assistant, advised by Prof. Lequan Yu.</span></li>
-<li><time>2026</time><span>Our paper “Eigen-Directed Random Projection for Medical Image Class Incremental Learning” has been accepted by <strong>MICCAI 2026</strong>!</span></li>
-<li><time datetime="2026-06">06/2026</time><span>I received my B.E. in Biomedical Engineering from <strong>Xi’an Jiaotong University</strong>.</span></li>
-<li><time datetime="2025-10">10/2025</time><span>I began a research internship with Prof. Hong Wang and Dr. Yichen Wu on medical image class incremental learning.</span></li>
-<li><time datetime="2025-08">08/2025</time><span>I began a research internship with Prof. Sen Lin on online continual learning.</span></li>
+<li><time datetime="2026-09">09/2026</time><span>🎉 Our paper “From Generic to Dedicated: A Novel Optimizer for Online Continual Learning” has been accepted by <strong>NeurIPS 2026</strong>!</span></li>
+<li><time datetime="2026-08">08/2026</time><span>🌱 I joined <strong>The University of Hong Kong</strong> as a full-time Research Assistant, advised by Prof. Lequan Yu.</span></li>
+<li><time datetime="2026-06">06/2026</time><span>🎉 Our paper “Eigen-Directed Random Projection for Medical Image Class Incremental Learning” has been accepted by <strong>MICCAI 2026</strong>!</span></li>
+<li><time datetime="2026-06">06/2026</time><span>🎓 I received my B.E. in Biomedical Engineering from <strong>Xi’an Jiaotong University</strong>.</span></li>
 </ul>
 </div>
 </section>
 <section id="publications" aria-labelledby="pub-title">
 <h2 id="pub-title">Publications <span class="contribution">(* indicates equal contribution)</span></h2>
-<ol class="publications">
-<li><article><h3>From Generic to Dedicated: A Novel Optimizer for Online Continual Learning</h3><p class="authors"><strong>Yongyi Wu</strong> <span class="muted">· First author</span></p><p class="venue">NeurIPS 2026 <span class="muted">· Accepted</span></p><p class="paper-summary">SPIN is an interpolation-based optimizer with dual parameter trajectories for rapid adaptation and stable consolidation in online continual learning.</p></article></li>
-<li><article><h3>Eigen-Directed Random Projection for Medical Image Class Incremental Learning</h3><p class="authors"><strong>Yongyi Wu</strong> <span class="muted">· First author</span></p><p class="venue">MICCAI 2026 <span class="muted">· Accepted</span></p><p class="paper-summary">EDRP is a training-free dual-view framework that uses feature-guided projections to preserve fine-grained information for medical image class incremental learning.</p></article></li>
-</ol>
+<div class="publications">
+<article class="paper">
+<a class="pipeline-link" href="spin-pipeline.png" aria-label="View SPIN pipeline at full resolution"><img class="pipeline" src="spin-pipeline.png" alt="SPIN pipeline with coupled plasticity and stability sequences, interpolation, and consolidation" width="2048" height="740" loading="lazy"></a>
+<div class="paper-info"><h3><a href="SPIN-NeurIPS-2026.pdf">From Generic to Dedicated: A Novel Optimizer for Online Continual Learning</a></h3>
+<p class="authors"><strong>Yongyi Wu</strong>, Zheng Wang, Sen Lin</p>
+<p class="venue">NeurIPS 2026</p>
+<p class="paper-links"><a href="SPIN-NeurIPS-2026.pdf">[Paper]</a></p>
+<p class="paper-summary">SPIN balances plasticity and stability through an interpolation-based optimizer for online continual learning.</p></div>
+</article>
+<article class="paper">
+<a class="pipeline-link" href="edrp-pipeline.png" aria-label="View EDRP pipeline at full resolution"><img class="pipeline" src="edrp-pipeline.png" alt="EDRP pipeline from frozen feature extraction through spectral decomposition and dual-view projection to an analytic classifier" width="2048" height="793" loading="lazy"></a>
+<div class="paper-info"><h3><a href="EDRP-MICCAI-2026.pdf">Eigen-Directed Random Projection for Medical Image Class Incremental Learning</a></h3>
+<p class="authors"><strong>Yongyi Wu*</strong>, Yichen Wu*, Quanzheng Li, Jianhua Ma, Hong Wang</p>
+<p class="venue">MICCAI 2026</p>
+<p class="paper-links"><a href="EDRP-MICCAI-2026.pdf">[Paper]</a> <a href="https://github.com/hmep313/EDRP_MICCAI">[Code]</a></p>
+<p class="paper-summary">EDRP uses eigen-directed dual-view projections for training-free medical image class incremental learning.</p></div>
+</article>
+</div>
 </section>
 <section id="education" aria-labelledby="edu-title">
 <h2 id="edu-title">Education</h2>
-<div class="education-row"><div><h3>Xi’an Jiaotong University</h3><p>B.E. in Biomedical Engineering</p></div><p class="education-date">Sep. 2022 – Jun. 2026</p></div>
+<div class="education-row"><img class="school-emblem" src="xjtu-emblem.jpg" alt="Xi’an Jiaotong University emblem" width="76" height="76"><div class="education-info"><h3>Xi’an Jiaotong University</h3><p>B.E. in Biomedical Engineering</p></div><p class="education-date">Sep. 2022 – Jun. 2026</p></div>
 </section>
 <footer><span>© 2026 Yongyi Wu</span><a href="#">Back to top ↑</a></footer>
 </main>
